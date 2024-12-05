@@ -7,10 +7,6 @@
     box-sizing: border-box;
 }
 
-.avatar{
-    width: 10rem; /* Largura fixa */
-    height: 10rem; /* Altura fixa */
-}
 
 body{
     min-height: 100vh;
@@ -22,6 +18,8 @@ body{
 
 .KanBan {
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 20px; /* Espaço entre as colunas */
     padding: 25px; 
     width: 100%;
@@ -85,6 +83,42 @@ body{
     cursor: pointer;
 
 
+}
+
+.badge{
+    color: #ffffff;
+    width: fit-content;
+    font-size: 0.9rem;
+    padding: 4px 8px;
+    border-radius: 10px;
+}
+
+.badge.high{
+    background-color: #6a11cb;
+}
+
+.badge.medium{
+    background-color: #114ccb;
+}
+
+.badge.low{
+    background-color: #11cb1a;
+}
+
+.card-infos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-icons{
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.dragging{
+    opacity: 0.5;
 }
 
 
