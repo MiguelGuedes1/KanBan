@@ -1,3 +1,94 @@
-.h1{
-    color: blue;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: "Poppins",sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+.avatar{
+    width: 10rem; /* Largura fixa */
+    height: 10rem; /* Altura fixa */
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+}
+
+.KanBan {
+    display: flex;
+    gap: 20px; /* Espaço entre as colunas */
+    padding: 25px; 
+    width: 100%;
+    height: 90vh;
+    overflow-x:auto;
+}
+
+.Kanban-column{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    height: 100%;
+    overflow-y: auto;
+    background-color: #f6f8fc;
+    border-radius: 15px;
+    padding: 12px;
+    overflow: hidden;
+    min-width: 252px;
+
+}
+
+.kanban-title{
+    display: flex;
+   justify-content: space-between;
+    
+}
+
+.kanban-title h2 {
+    font-size: 1rem;
+    color: #4b5563;
+    font-weight: 1000;
+}
+
+.add-card{
+    color: #4b5563;
+    font-size: 1rem;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+}
+
+.Kanban-cards{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    border-radius: 10px;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+}
+
+.KanBan-card{
+    display: flex;
+    flex-direction:column;
+    gap: 0.8rem;
+    background-color:pink;
+    border-radius: 10px;
+    padding: 0.8rem;
+    box-shadow: 0px 5px 5px -3px rgba(0,0,0,0.8);
+    cursor: pointer;
+
+
+}
+
+
+
+
+
+
