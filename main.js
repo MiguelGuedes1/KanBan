@@ -8,3 +8,9 @@ document.querySelectorAll(".KanBan-card").forEach( card => {
         e.currentTarget.classList.remove("dragging")
     })
 })
+
+document.querySelectorAll(".Kanban-cards").forEach(column =>{
+    const dragcard = document.querySelector(".KanBan-card.dragging")
+    e.currentTarget.appendChild(dragcard)
+})
+
